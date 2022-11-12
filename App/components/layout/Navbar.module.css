@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    background: rgb(98, 112, 112);
+    padding: 30px;
+}
+
+.item {
+    font-size: 1.1em;
+    margin-right: 1em;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 222);
+    background: rgb(122, 122, 122);
+    padding: 5px;
+    border: 1px inset rgb(43, 42, 42);
+    border-radius: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    transition: .3s;
+    filter: brightness(.8);
+}
