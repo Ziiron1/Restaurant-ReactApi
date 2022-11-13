@@ -1,22 +1,28 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom' /* Routes */
 import './App.css' /* Style */
-import Navbar from '../components/layout/Navbar/Navbar' /* NavBar */
-import Footer from '../components/layout/Footer/footer' /* Footer */
+
+/* Global */
+import Navbar from '../components/layout/Navbar/Navbar'
+import Footer from '../components/layout/Footer/footer'
 
 /* Pages */
 import Login from './pages/Login'
 import Cadastro from './pages/cadastro'
-import Loading from './pages/loading'
 import Home from './pages/home'
-import Produtos from './pages/produtos'
+import Produtos from './pages/produto'
+import Agendamentos from './pages/Agendamento'
+
+/* Load */
+import Load from '../components/layout/loading/Loading'
 
 
 function App() {
 
 
-  return (
+  return <div className='App' >
     <Router>
       <Navbar />
+      {/* <Load /> */}
 
       <Routes>
         <Route exact='true' path="/" element={<Home />} > </Route>
@@ -35,25 +41,14 @@ function App() {
       </Routes>
 
       <Routes>
-        <Route path="/loading" element={<Loading />} > </Route>
+        <Route path="/agendamento" element={<Agendamentos />} > </Route>
       </Routes>
-
-
-      <main>
-        <section>
-          <div>
-            <h1>oi</h1>
-            <p>sei la o que falo aqui</p>
-          </div>
-        </section>
-      </main>
 
 
       <Footer />
     </Router>
 
-
-  )
+  </div>
 }
 
 export default App

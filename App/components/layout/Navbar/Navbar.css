@@ -3,8 +3,8 @@
 :root {
     --white: #fff;
     --black: #000;
-    --theme-bg-color: #c6cde0;
-    --theme-text-color: #ffffffaf;
+    --theme-bg-color: #1E1E1E;
+    --theme-text-color: #FFAD50;
     --theme-border-color: #ffffff33;
 }
 
@@ -81,6 +81,23 @@ header nav {
     gap: 60px;
 }
 
+.Agenda {
+    background-color: rgb(27, 27, 27);
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding: 6px 20px 0px;
+    letter-spacing: .7px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.Agenda:hover {
+    color: rgb(19, 19, 19);
+    background-color: var(--theme-text-color);
+    transition: .8s;
+}
+
 .iconuser {
     width: 26px;
     height: 26px;
@@ -109,7 +126,7 @@ header nav {
 #users:hover,
 #users2:hover {
     transition: .3s;
-    color: rgb(220, 217, 177);
+    filter: brightness(.7);
 }
 
 header nav a::before {
@@ -119,7 +136,7 @@ header nav a::before {
     bottom: 0;
     width: 0;
     height: 1px;
-    background-color: var(--white);
+    background-color: #fa6900;
     transition: all 0.5s ease;
 }
 
@@ -128,9 +145,13 @@ header nav li:hover a::before {
     width: 100%;
 }
 
-header nav li .active,
-header nav li:hover a {
+header nav li .active {
     color: var(--white);
+}
+
+header nav li:hover a {
+    color: var(--theme-text-color);
+    filter: brightness(.9);
 }
 
 header #nav-check {
