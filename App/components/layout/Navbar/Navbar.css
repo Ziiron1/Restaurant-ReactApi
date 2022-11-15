@@ -3,9 +3,10 @@
 :root {
     --white: #fff;
     --black: #000;
-    --theme-bg-color: #1E1E1E;
+    --theme-bg-color: #324B4B;
     --theme-text-color: #FFAD50;
-    --theme-border-color: #ffffff33;
+    --theme-border-color: #228b58;
+    --hover-text: #4dd397;
 }
 
 *,
@@ -42,7 +43,7 @@ ul {
 }
 
 header {
-    background-color: rgb(15, 15, 15);
+    background-color: var(--theme-bg-color);
     padding: 12px 0;
     position: relative;
 }
@@ -82,20 +83,21 @@ header nav {
 }
 
 .Agenda {
-    background-color: rgb(27, 27, 27);
-    border: 1px solid #3a3a3a;
+    background-color: var(--theme-bg-color);
+    filter: brightness(.9);
     border-radius: 20px;
     margin-top: 5px;
     margin-bottom: 2px;
-    padding: 6px 12px 0px;
+    padding: 8px 12px 0px;
     letter-spacing: .7px;
     font-family: 'Cabin', sans-serif;
 }
 
 .Agenda:hover {
-    color: rgb(19, 19, 19);
-    background-color: var(--theme-text-color);
+    color: var(--black) ;
+    background-color: var(--hover-text);
     transition: .8s;
+    filter: brightness(.8);
 }
 
 .iconuser {
@@ -126,7 +128,8 @@ header nav {
 #users:hover,
 #users2:hover {
     transition: .3s;
-    filter: brightness(.7);
+    color: var(--hover-text);
+    filter: brightness(.9);
 }
 
 header nav a::before {
@@ -150,7 +153,7 @@ header nav li .active {
 }
 
 header nav li:hover a {
-    color: var(--theme-text-color);
+    color: var(--hover-text);
     filter: brightness(.9);
 }
 

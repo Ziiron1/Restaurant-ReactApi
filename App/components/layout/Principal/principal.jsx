@@ -7,10 +7,14 @@ import platehome from './img/platehome.png'
 import About from './img/about.jpg'
 import app1 from './img/app1.png'
 import app2 from './img/app2.png'
-import movil from './img/movil-app.png'
+import movil from './img/Movil.png'
 import plate1 from './img/plate1.png'
 import plate2 from './img/plate2.png'
 import plate3 from './img/plate3.png'
+import Logo from './img/logo.jfif'
+import Sublogo from './img/Sublogo.jfif'
+
+
 // import './script'
 // import Navbar from '../Navbar/Navbar
 import Scroll from './Scroll'
@@ -54,7 +58,7 @@ export default function Principal() {
                         <div className="about__data">
                             <span className="section-subtitle about__initial">Sobre</span>
                             <h2 className="section-title about__initial">Cozinhamos a comida mais saborosa </h2>
-                            <p className="about__description">Nós cozinhamos a mlehor comida da cidade inteira, com excelente serviço ao cliente, os melhores pratos e ao melhor preço, visite-nos.</p>
+                            <p className="about__description">Nós cozinhamos a melhor comida da cidade inteira, com excelente serviço ao cliente, os melhores pratos e ao melhor preço, visite-nos.</p>
                             <a href="#" className="button">Explore nossa história</a>
                         </div>
 
