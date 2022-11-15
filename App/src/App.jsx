@@ -11,7 +11,6 @@ import Cadastro from './pages/Cliente/cadastro'
 import Home from './pages/home'
 import Produtos from './pages/Produto/Produto'
 import Agendamentos from './pages/Agendamento/Agendamento'
-import CFP from './pages/CNP'
 
 /* Load */
 import Load from '../components/layout/loading/Loading'
@@ -48,10 +47,6 @@ function App() {
 
       <Routes>
         <Route path="/agendamento" element={<Agendamentos />} > </Route>
-      </Routes>
-
-      <Routes>
-        <Route path="/confienoprocesso" element={<CFP />} > </Route>
       </Routes>
 
 
