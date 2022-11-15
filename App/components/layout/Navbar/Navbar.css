@@ -94,7 +94,7 @@ header nav {
 }
 
 .Agenda:hover {
-    color: var(--black) ;
+    color: var(--black);
     background-color: var(--hover-text);
     transition: .8s;
     filter: brightness(.8);
@@ -111,6 +111,16 @@ header nav {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.Sublogo {
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+    cursor: default;
 }
 
 #users2 {

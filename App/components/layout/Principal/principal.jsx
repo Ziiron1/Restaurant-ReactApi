@@ -11,14 +11,9 @@ import movil from './img/Movil.png'
 import plate1 from './img/plate1.png'
 import plate2 from './img/plate2.png'
 import plate3 from './img/plate3.png'
-import Logo from './img/logo.jfif'
-import Sublogo from './img/Sublogo.jfif'
 
 
-// import './script'
-// import Navbar from '../Navbar/Navbar
 import Scroll from './Scroll'
-import Theme from './Theme'
 
 
 export default function Principal() {

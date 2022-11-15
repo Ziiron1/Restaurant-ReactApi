@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import logo from './logo.png'
 import logo2 from './logo2.png'
 import User from './User.png'
 
@@ -13,6 +12,9 @@ export default function Navbar() {
                 <div className="row">
                     <a href="/">
                         <img src={logo2} alt="Logo" />
+                        <div className="Sublogo">
+                            <span className="Sublogo">Originalidade Francesa</span>
+                        </div>
                     </a>
                     <input type="checkbox" id="nav-check" />
                     <label htmlFor="nav-check" className="nav-toggler">
@@ -35,7 +37,6 @@ export default function Navbar() {
                         </ul>
                     </nav>
                     <div className="nav__toggle" id="nav-toggle">
-                        <i className='bx bx-menu'></i>
                     </div>
                 </div>
 
