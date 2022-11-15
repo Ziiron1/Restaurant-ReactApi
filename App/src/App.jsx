@@ -6,11 +6,11 @@ import Navbar from '../components/layout/Navbar/Navbar'
 import Footer from '../components/layout/Footer/footer'
 
 /* Pages */
-import Login from './pages/Login'
-import Cadastro from './pages/cadastro'
+import Login from './pages/Cliente/Login'
+import Cadastro from './pages/Cliente/cadastro'
 import Home from './pages/home'
-import Produtos from './pages/produto'
-import Agendamentos from './pages/Agendamento'
+import Produtos from './pages/Produto/Produto'
+import Agendamentos from './pages/Agendamento/Agendamento'
 
 /* Load */
 import Load from '../components/layout/loading/Loading'
@@ -20,9 +20,16 @@ function App() {
 
 
   return <div className='App' >
+
     <Router>
       <Navbar />
       {/* <Load /> */}
+
+
+
+
+
+      {/* Rotas */}
 
       <Routes>
         <Route exact='true' path="/" element={<Home />} > </Route>
@@ -45,6 +52,7 @@ function App() {
       </Routes>
 
 
+      {/* Footer */}
       <Footer />
     </Router>
 

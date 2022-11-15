@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --white: #fff;
     --white2: #f0f0f0d7;
     --black: #000;
@@ -7,10 +7,10 @@
     --b4: #121212;
     --details: #F38630;
     --details2: #FA6900;
-    --theme-text-color: #FFAD50;
+    --theme-text-color: #FFAD50; */
 
     /* Tomato Colors */
-    --tomato1: hsl(10, 23.0%, 9.4%);
+/*     --tomato1: hsl(10, 23.0%, 9.4%);
     --tomato2: hsl(9, 44.8%, 11.4%);
     --tomato3: hsl(8, 52.0%, 15.3%);
     --tomato4: hsl(7, 56.3%, 18.0%);
@@ -30,7 +30,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--tomato8);
 }
 
@@ -40,4 +40,4 @@
     width: max-content;
     height: 600px;
     filter: grayscale(.5);
-}
+} */
