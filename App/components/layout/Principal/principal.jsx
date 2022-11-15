@@ -2,7 +2,8 @@ import { useEffect } from "react"
 import React from "react"
 import './principal.module.css'
 import './style.scss'
-import Home from './img/home.png'
+
+import platehome from './img/platehome.png'
 import About from './img/about.jpg'
 import app1 from './img/app1.png'
 import app2 from './img/app2.png'
@@ -21,6 +22,7 @@ export default function Principal() {
         ['']
     })
 
+
     return (
 
         <div id="body">
@@ -32,33 +34,28 @@ export default function Principal() {
             </a>
 
             {/* <Navbar /> */}
-            {/* <li><i className='bx bx-moon change-theme' id="theme-button"></i></li>
-            <div className="nav__toggle" id="nav-toggle">
-                <i className='bx bx-menu'></i>
-            </div> */}
 
             {/* Main */}
             <main className="l-main">
                 <section className="home" id="home">
                     <div className="home__container bd-container bd-grid">
                         <div className="home__data">
-                            <h1 className="home__title">Tasty food</h1>
-                            <h2 className="home__subtitle">Try the best food of <br /> the week.</h2>
-                            <a href="#" className="button">View Menu</a>
+                            <h1 className="home__title">Ma Cuisine</h1>
+                            <h2 className="home__subtitle">Experimente a melhor comida da região.</h2>
+                            <a href="/produtos" className="button">Menu</a>
                         </div>
 
-                        <img src={Home} alt="aaaa" className="home__img" />
+                        <img src={platehome} alt="aaaa" className="home__img" />
                     </div>
                 </section>
 
                 <section className="about section bd-container" id="about">
                     <div className="about__container  bd-grid">
                         <div className="about__data">
-                            <span className="section-subtitle about__initial">About us</span>
-                            <h2 className="section-title about__initial">We cook the best <br /> tasty food</h2>
-                            <p className="about__description">We cook the best food in the entire city, with excellent customer
-                                service, the best meals and at the best price, visit us.</p>
-                            <a href="#" className="button">Explore history</a>
+                            <span className="section-subtitle about__initial">Sobre</span>
+                            <h2 className="section-title about__initial">Cozinhamos a comida mais saborosa </h2>
+                            <p className="about__description">Nós cozinhamos a mlehor comida da cidade inteira, com excelente serviço ao cliente, os melhores pratos e ao melhor preço, visite-nos.</p>
+                            <a href="#" className="button">Explore nossa história</a>
                         </div>
 
                         <img src={About} alt="" className="about__img" />
@@ -66,8 +63,8 @@ export default function Principal() {
                 </section>
 
                 <section className="services section bd-container" id="services">
-                    <span className="section-subtitle">Offering</span>
-                    <h2 className="section-title">Our amazing services</h2>
+                    <span className="section-subtitle">Oferecendo</span>
+                    <h2 className="section-title">Nossos melhores serviços</h2>
 
                     <div className="services__container  bd-grid">
                         <div className="services__content">
@@ -132,9 +129,8 @@ export default function Principal() {
                           16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
                           46.6405 18.816 45.964 18.3989 45.5466Z" />
                             </svg>
-                            <h3 className="services__title">Excellent food</h3>
-                            <p className="services__description">We offer our clients excellent quality services for many years,
-                                with the best and delicious food in the city.</p>
+                            <h3 className="services__title">Comida excelente</h3>
+                            <p className="services__description">Nós oferecemos a nossos clientes, excelentes serviços de qualidade por anos, com a melhor e mais deliciosa comida da cidade</p>
                         </div>
 
                         <div className="services__content">
@@ -304,8 +300,7 @@ export default function Principal() {
                                 </defs>
                             </svg>
                             <h3 className="services__title">Fast food</h3>
-                            <p className="services__description">We offer our clients excellent quality services for many years,
-                                with the best and delicious food in the city.</p>
+                            <p className="services__description">Com os melhores lanches para saborear.</p>
                         </div>
 
                         <div className="services__content">
@@ -362,39 +357,38 @@ export default function Principal() {
                                 </defs>
                             </svg>
                             <h3 className="services__title">Delivery</h3>
-                            <p className="services__description">We offer our clients excellent quality services for many years,
-                                with the best and delicious food in the city.</p>
+                            <p className="services__description"> As entregas mais rápidas, com os melhores sabores e ainda quentinhos na sua porta. </p>
                         </div>
                     </div>
                 </section>
 
                 <section className="menu section bd-container" id="menu">
-                    <span className="section-subtitle">Special</span>
-                    <h2 className="section-title">Menu of the week</h2>
+                    <span className="section-subtitle">Especial</span>
+                    <h2 className="section-title">Menu da Semana</h2>
 
                     <div className="menu__container bd-grid">
                         <div className="menu__content">
                             <img src={plate1} alt="" className="menu__img" />
-                            <h3 className="menu__name">Barbecue salad</h3>
-                            <span className="menu__detail">Delicious dish</span>
-                            <span className="menu__preci">$22.00</span>
-                            <a href="#" className="button menu__button"><i className='bx bx-cart-alt'></i></a>
+                            <h3 className="menu__name">Salada de Barbecue</h3>
+                            <span className="menu__detail">Prato delicioso</span>
+                            <span className="menu__preci">R$36,00</span>
+                            <a href="/produtos" className="button menu__button"><i className='bx bx-cart-alt'></i></a>
                         </div>
 
                         <div className="menu__content">
                             <img src={plate2} alt="" className="menu__img" />
-                            <h3 className="menu__name">Salad with fish</h3>
-                            <span className="menu__detail">Delicious dish</span>
-                            <span className="menu__preci">$12.00</span>
-                            <a href="#" className="button menu__button"><i className='bx bx-cart-alt'></i></a>
+                            <h3 className="menu__name">Salade Caesar Au Poulet</h3>
+                            <span className="menu__detail">Salada Originalmente Americana com o nosso toque especial</span>
+                            <span className="menu__preci">R$31,00</span>
+                            <a href="/produtos" className="button menu__button"><i className='bx bx-cart-alt'></i></a>
                         </div>
 
                         <div className="menu__content">
                             <img src={plate3} alt="" className="menu__img" />
-                            <h3 className="menu__name">Spinach salad</h3>
-                            <span className="menu__detail">Delicious dish</span>
-                            <span className="menu__preci">$9.50</span>
-                            <a href="#" className="button menu__button"><i className='bx bx-cart-alt'></i></a>
+                            <h3 className="menu__name">Salada de Espinafre</h3>
+                            <span className="menu__detail">Prato delicioso</span>
+                            <span className="menu__preci">R$27,00</span>
+                            <a href="/produtos" className="button menu__button"><i className='bx bx-cart-alt'></i></a>
                         </div>
                     </div>
                 </section>
@@ -403,12 +397,11 @@ export default function Principal() {
                     <div className="app__container bd-grid">
                         <div className="app__data">
                             <span className="section-subtitle app__initial">App</span>
-                            <h2 className="section-title app__initial">App is aviable</h2>
-                            <p className="app__description">Find our application and download it, you can make reservations, food
-                                orders, see your deliveries on the way and much more.</p>
+                            <h2 className="section-title app__initial">App acessível</h2>
+                            <p className="app__description">Baixe nosso Aplicativo, voce pode fazer reservas, pedidos de comida, ver os seus deliverys a caminho e muito mais.</p>
                             <div className="app__stores">
-                                <a href="#"><img src={app1} alt="aaa" className="app__store" /></a>
-                                <a href="#"><img src={app2} alt="a" className="app__store" /></a>
+                                <a href="/confienoprocesso"><img src={app1} alt="Appstore" className="app__store" /></a>
+                                <a href="/confienoprocesso"><img src={app2} alt="GooglePlay" className="app__store" /></a>
                             </div>
                         </div>
 
@@ -419,64 +412,19 @@ export default function Principal() {
                 <section className="contact section bd-container" id="contact">
                     <div className="contact__container bd-grid">
                         <div className="contact__data">
-                            <span className="section-subtitle contact__initial">Let's talk</span>
-                            <h2 className="section-title contact__initial">Contact us</h2>
-                            <p className="contact__description">If you want to reserve a table in our restaurant, contact us and we
-                                will attend you quickly, with our 24/7 chat service.</p>
+                            <span className="section-subtitle contact__initial">Vamos conversar</span>
+                            <h2 className="section-title contact__initial">Contate-nos</h2>
+                            <p className="contact__description">Se voce quer reservar uma mesa no nosso restaurante, nos contate e nos iremos atender voce prontamente, com nosso serviço de chat 24/7.</p>
                         </div>
 
                         <div className="contact__button">
-                            <a href="#" className="button">Contact us now</a>
+                            <a href="/agendamento" className="button">Contate</a>
                         </div>
                     </div>
                 </section>
             </main>
 
-            <footer className="footer section bd-container">
-                <div className="footer__container bd-grid">
-                    <div className="footer__content">
-                        <a href="#" className="footer__logo">Tasty Food</a>
-                        <span className="footer__description">Restaurant</span>
-                        <div>
-                            <a href="#" className="footer__social"><i className='bx bxl-facebook'></i></a>
-                            <a href="#" className="footer__social"><i className='bx bxl-instagram'></i></a>
-                            <a href="#" className="footer__social"><i className='bx bxl-twitter'></i></a>
-                        </div>
-                    </div>
-
-                    <div className="footer__content">
-                        <h3 className="footer__title">Services</h3>
-                        <ul>
-                            <li><a href="#" className="footer__link">Delivery</a></li>
-                            <li><a href="#" className="footer__link">Pricing</a></li>
-                            <li><a href="#" className="footer__link">Fast food</a></li>
-                            <li><a href="#" className="footer__link">Reserve your spot</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer__content">
-                        <h3 className="footer__title">Information</h3>
-                        <ul>
-                            <li><a href="#" className="footer__link">Event</a></li>
-                            <li><a href="#" className="footer__link">Contact us</a></li>
-                            <li><a href="#" className="footer__link">Privacy policy</a></li>
-                            <li><a href="#" className="footer__link">Terms of services</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer__content">
-                        <h3 className="footer__title">Adress</h3>
-                        <ul>
-                            <li>Lima - Peru</li>
-                            <li>Jr Union 312</li>
-                            <li>999 - 888 - 777</li>
-                            <li>tastyfood@email.com</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p className="footer__copy">&#169; FrontEnders. All right reserved</p>
-            </footer>
+            {/* Footer */}
 
             <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
             <script type="module" src="./components/pages/script.js" ></script>

@@ -4,8 +4,8 @@ export default function Scroll() {
 
     const sr = ScrollReveal({
         origin: 'top',
-        distance: '50px',
-        duration: 1500,
+        distance: '30px',
+        duration: 2000,
         reset: true
     });
     return (
@@ -16,7 +16,7 @@ export default function Scroll() {
             .app__data, .app__img,
             .contact__data, .contact__button,
             .footer__content`, {
-            interval: 100
+            interval: 300
         })
 
     )

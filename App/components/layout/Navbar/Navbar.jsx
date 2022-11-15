@@ -20,7 +20,7 @@ export default function Navbar() {
                     <nav>
                         <ul>
                             <li><a href="/" className="active">Home</a></li>
-                            <li><a href="/" >About</a></li>
+                            <li><a href="#about" >About</a></li>
                             <li><a href="/produtos">Produtos</a></li>
 
                         </ul>
