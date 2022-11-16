@@ -15,6 +15,10 @@ import Agendamentos from './pages/Agendamento/Agendamento'
 /* Load */
 import Load from '../components/layout/loading/Loading'
 
+/* Cookie */
+import Cookies from '../components/Cookies/Cookie'
+
+
 
 function App() {
 
@@ -49,8 +53,9 @@ function App() {
         <Route path="/agendamento" element={<Agendamentos />} > </Route>
       </Routes>
 
+      <Cookies />
 
-      {/* Footer */}
+
       <Footer />
     </Router>
 

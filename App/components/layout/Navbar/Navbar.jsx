@@ -13,7 +13,7 @@ export default function Navbar() {
                     <a href="/">
                         <img src={logo2} alt="Logo" />
                         <div className="Sublogo">
-                            <span className="Sublogo">Originalidade Francesa</span>
+                            <span className="Sublogo">Originalidade</span>
                         </div>
                     </a>
                     <input type="checkbox" id="nav-check" />
