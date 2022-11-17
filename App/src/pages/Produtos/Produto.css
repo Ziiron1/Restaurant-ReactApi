@@ -1,0 +1,311 @@
+#Pbtn {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+}
+
+#Pbtn,
+#Pbtn span {
+    transition: 200ms;
+}
+
+#Pbtn .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+#Pbtn .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Pbtn svg {
+    width: 15px;
+    fill: #eee;
+}
+
+#Pbtn:hover {
+    background: #ff3636;
+}
+
+#Pbtn:hover .text {
+    color: transparent;
+}
+
+#Pbtn:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+#Pbtn:focus {
+    outline: none;
+}
+
+#Pbtn:active .icon svg {
+    transform: scale(0.8);
+}
+
+.PostBtn {
+    font-family: inherit;
+    font-size: 18px;
+    background: royalblue;
+    color: white;
+    padding: 0.2em 0.6em;
+    padding-left: 0.6em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.PostBtn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.PostBtn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.PostBtn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.PostBtn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.PostBtn:hover span {
+    transform: translateX(5em);
+}
+
+.PostBtn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+
+.Patchbtn {
+    max-width: 200px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background-color: rgb(44, 196, 92);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: all .5s ease;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 55px;
+}
+
+.Patchbtn:hover {
+    transition: .3s;
+    letter-spacing: 1.2px;
+    background-color: rgb(41, 147, 53);
+    color: hsl(0, 0%, 87%);
+}
+
+
+h3 {
+    color: #3fe494;
+    font-size: 1.4em;
+}
+
+.card {
+    background-color: #505656;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.359);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.price {
+    color: #eee2e2;
+    font-size: 22px;
+}
+
+.Descricao {
+    color: #e6e5e5;
+    padding: 1px 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.patchbttt {
+    display: block;
+    margin-top: 55px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    gap: 5px;
+}
+
+.central {
+    display: flex;
+    justify-content: center;
+}
+
+.radiobtn {
+    display: block;
+}
+
+.centralbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 340px;
+    object-fit: cover;
+}
+
+
+.form {
+    margin: 20px 0px 10px 500px;
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 600px;
+    padding: 20px;
+    width: 320px;
+}
+
+.title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:active {
+    background-color: #06b;
+}
