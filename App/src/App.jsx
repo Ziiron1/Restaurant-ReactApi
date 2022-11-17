@@ -3,7 +3,7 @@ import './App.css' /* Style */
 
 /* Global */
 import Navbar from '../components/layout/Navbar/Navbar'
-import Footer from '../components/layout/Footer/footer'
+import Footer from '../components/layout/Footer/Footer'
 
 /* Pages */
 import Login from './pages/Cliente/Login'
