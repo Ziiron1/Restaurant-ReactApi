@@ -10,7 +10,7 @@ import Login from './pages/Cliente/Login'
 import Cadastro from './pages/Cliente/cadastro'
 import Home from './pages/home'
 import Produtos from './pages/Produtos/Produto'
-import Agendamentos from './pages/Agendamento/Agendamento'
+// import Agendamentos from './pages/Agendamento/Agendamento'
 
 /* Load */
 import Load from '../components/layout/loading/Loading'
@@ -49,9 +49,9 @@ function App() {
         <Route path="/produtos" element={<Produtos />} > </Route>
       </Routes>
 
-      <Routes>
+      {/* <Routes>
         <Route path="/agendamento" element={<Agendamentos />} > </Route>
-      </Routes>
+      </Routes> */}
 
       <Cookies />
 
