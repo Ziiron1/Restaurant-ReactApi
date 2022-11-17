@@ -1,0 +1,144 @@
+#Pbtn {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+}
+
+#Pbtn,
+#Pbtn span {
+    transition: 200ms;
+}
+
+#Pbtn .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+#Pbtn .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Pbtn svg {
+    width: 15px;
+    fill: #eee;
+}
+
+#Pbtn:hover {
+    background: #ff3636;
+}
+
+#Pbtn:hover .text {
+    color: transparent;
+}
+
+#Pbtn:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+#Pbtn:focus {
+    outline: none;
+}
+
+#Pbtn:active .icon svg {
+    transform: scale(0.8);
+}
+
+.PostBtn {
+    font-family: inherit;
+    font-size: 18px;
+    background: royalblue;
+    color: white;
+    padding: 0.2em 0.6em;
+    padding-left: 0.6em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.PostBtn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.PostBtn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.PostBtn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.PostBtn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.PostBtn:hover span {
+    transform: translateX(5em);
+}
+
+.PostBtn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+
+.Patchbtn {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 0;
+    margin-top: 30px;
+    background-color: rgb(44, 196, 92);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+.Patchbtn:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.Patchbtn:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}

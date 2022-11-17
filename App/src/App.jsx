@@ -9,7 +9,7 @@ import Footer from '../components/layout/Footer/footer'
 import Login from './pages/Cliente/Login'
 import Cadastro from './pages/Cliente/cadastro'
 import Home from './pages/home'
-import Produtos from './pages/Produto/Produto'
+import Produtos from './pages/Produtos/Produto'
 import Agendamentos from './pages/Agendamento/Agendamento'
 
 /* Load */
