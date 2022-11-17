@@ -127,8 +127,13 @@ function Produtos() {
                 <input type="text" value={link_imagem} onChange={(e) => setLink_imagem(e.target.value)} />
                 <hr />
 
-                <input type="radio" name="1" id="" onClick={Pratos} />
-                <input type="radio" name="2" id="" onClick={Bebidas} />
+
+                <input type="radio" id="html" name="fav_language" value="HTML" onClick={Pratos} />
+                <label for="html">Pratos</label><br />
+                <input type="radio" id="css" name="fav_language" value="CSS" onClick={Bebidas} />
+                <label for="css">Bebidas</label><br />
+
+              
 
                 {/* Post button */}
                 <button onClick={postData} className="PostBtn">
