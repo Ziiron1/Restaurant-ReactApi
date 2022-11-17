@@ -41,6 +41,15 @@ function Produtos() {
             .catch(err => console.log(err))
     }
 
+    const postData3 = (e) => {
+        e.preventDefault();
+        Axios.post('https://crudserver2.herokuapp.com/sobremesa', {
+            nome, setNome, tipo, setTipo, descricao, setDescricao, preco, SetPreco, link_imagem, setLink_imagem
+        })
+            .then(res => console.log('Posting data', res))
+            .catch(err => console.log(err))
+    }
+
     //  Delete an id's api
     const postDelete = (id, e) => {
         e.preventDefault();
@@ -56,10 +65,37 @@ function Produtos() {
             .catch(err => console.log(err))
     }
 
+    const postDelete3 = (id, e) => {
+        e.preventDefault();
+        Axios.delete(`https://crudserver2.herokuapp.com/sobremesa/${id} `)
+            .then(res => console.log('Deleting data', res))
+            .catch(err => console.log(err))
+    }
+
     // Patch what u want for the choosen api
     const postPatch = (id, e) => {
         e.preventDefault();
         Axios.patch(`https://crudserver2.herokuapp.com/pratos/${id}`, {
+            nome, setNome, tipo, setTipo, descricao, setDescricao, preco, SetPreco, link_imagem, setLink_imagem
+        })
+            .then(res => console.log('Patching data', res))
+            .catch(err => console.log(err))
+    }
+
+    // Patch what u want for the choosen api
+    const postPatch2 = (id, e) => {
+        e.preventDefault();
+        Axios.patch(`https://crudserver2.herokuapp.com/bebidas/${id}`, {
+            nome, setNome, tipo, setTipo, descricao, setDescricao, preco, SetPreco, link_imagem, setLink_imagem
+        })
+            .then(res => console.log('Patching data', res))
+            .catch(err => console.log(err))
+    }
+
+    // Patch what u want for the choosen api
+    const postPatch3 = (id, e) => {
+        e.preventDefault();
+        Axios.patch(`https://crudserver2.herokuapp.com/sobremesa/${id}`, {
             nome, setNome, tipo, setTipo, descricao, setDescricao, preco, SetPreco, link_imagem, setLink_imagem
         })
             .then(res => console.log('Patching data', res))
@@ -80,6 +116,16 @@ function Produtos() {
     /* Função para RadioBtn consumir */
     function Bebidas() {
         Axios.get('https://crudserver2.herokuapp.com/bebidas')
+            .then(res => {
+                console.log("Getting from ", res.data)
+                setDate(res.data)
+            })
+            .catch(err => console.log(err))
+    }
+
+    /* Função para RadioBtn consumir */
+    function Sobremesa() {
+        Axios.get('https://crudserver2.herokuapp.com/sobremesa')
             .then(res => {
                 console.log("Getting from ", res.data)
                 setDate(res.data)
@@ -157,10 +203,14 @@ function Produtos() {
             <h2 className='central'>Selecione o que você quer</h2>
             <div className='flex'>
 
-                <input type="radio" id="html" name="fav_language" value="HTML" onClick={Pratos} />
-                <label for="html">Pratos</label><br />
-                <input type="radio" id="css" name="fav_language" value="CSS" onClick={Bebidas} />
-                <label for="css">Bebidas</label><br />
+                <input type="radio" id="Pratos" name="restaurant" onClick={Pratos} />
+                <label for="Pratos">Pratos</label><br />
+
+                <input type="radio" id="Bebidas" name="restaurant" onClick={Bebidas} />
+                <label for="Bebidas">Bebidas</label><br />
+
+                <input type="radio" id="Sobremesa" name="restaurant" onClick={Sobremesa} />
+                <label for="Sobremesa"> Sobremesa </label><br />
 
 
             </div>
@@ -253,6 +303,19 @@ function Produtos() {
                         </div>
                     </div>
                     <span>Drink</span>
+                </button>
+
+                {/* Post button Dessert */}
+                <button onClick={postData3} className="PostBtn">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Dessert</span>
                 </button>
             </div>
 
