@@ -212,16 +212,18 @@ header #nav-check {
 
 @media (max-width:767px) {
     .nav-toggler {
+        transition: .3s;
         display: flex;
     }
 
     header nav {
+        transition: .3s;
         position: absolute;
         left: 0;
         top: 100%;
         width: 100%;
-        background-color: var(--black);
-        border-top: 1px solid var(--theme-border-color);
+        background-color: var(--theme-bg-color);
+        border-top: 1px solid rgb(36, 36, 36);
         opacity: 1;
         visibility: hidden;
     }
@@ -232,8 +234,10 @@ header #nav-check {
     }
 
     header #nav-check:checked~nav {
+        transition: .3s;
         opacity: 1;
         visibility: visible;
+        animation: mymove .5s linear;
     }
 
     header #nav-check:checked~.nav-toggler span {
@@ -241,12 +245,24 @@ header #nav-check {
     }
 
     header #nav-check:checked~.nav-toggler span::before {
+        transition: .3s;
         top: 0;
         transform: rotate(90deg);
     }
 
     header #nav-check:checked~.nav-toggler span::after {
+        transition: .3s;
         top: 0;
         transform: rotate((-45deg));
+    }
+}
+
+@keyframes mymove {
+    from {
+        top: 50px;
+    }
+
+    to {
+        bottom: 100px;
     }
 }

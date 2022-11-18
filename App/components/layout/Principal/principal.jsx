@@ -18,9 +18,14 @@ import Scroll from './Scroll'
 
 export default function Principal() {
     useEffect((Scroll), () => {
-        ['']
-    })
 
+    });
+
+    // let tema = document.getElementById('body')
+
+    // function theme() {
+    //     tema.classList.toggle('dark-theme')
+    // }
 
     return (
 

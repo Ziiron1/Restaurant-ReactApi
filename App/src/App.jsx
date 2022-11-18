@@ -10,6 +10,7 @@ import Login from './pages/Cliente/Login'
 import Cadastro from './pages/Cliente/cadastro'
 import Home from './pages/home'
 import Produtos from './pages/Produtos/Produto'
+import NotFound from './pages/NotFound/notFound'
 // import Agendamentos from './pages/Agendamento/Agendamento'
 
 /* Load */
@@ -23,7 +24,7 @@ import Cookies from '../components/Cookies/Cookie'
 function App() {
 
 
-  return <div className='App' >
+  return <div className='App'>
 
     <Router>
       <Navbar />
@@ -49,9 +50,9 @@ function App() {
         <Route path="/produtos" element={<Produtos />} > </Route>
       </Routes>
 
-      {/* <Routes>
-        <Route path="/agendamento" element={<Agendamentos />} > </Route>
-      </Routes> */}
+      <Routes>
+        {/* <Route path="*" element={<NotFound />} > </Route> */}
+      </Routes>
 
       <Cookies />
 

@@ -6,6 +6,35 @@ import User from './User.png'
 
 export default function Navbar() {
 
+    function theme() {
+        // body.classList.toggle('dark-theme')
+        const themeButton = document.getElementById('themebtn')
+        const darkTheme = 'dark-theme'
+        const iconTheme = 'bx-sun'
+
+        const selectedTheme = localStorage.getItem('selected-theme')
+        const selectedIcon = localStorage.getItem('selected-icon')
+
+        const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+        const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+        if (selectedTheme) {
+            // Se a validação está preenchida, pergunta e remove
+            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+            themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+        }
+
+
+        // Adiciona ou remove o dark / icon theme
+        document.body.classList.toggle(darkTheme)
+        themeButton.classList.toggle(iconTheme)
+
+        // Theme é salvo no storage local
+        localStorage.setItem('selected-theme', getCurrentTheme())
+        localStorage.setItem('selected-icon', getCurrentIcon())
+
+    }
+
     return (
         <header>
             <div className="container">
@@ -33,7 +62,7 @@ export default function Navbar() {
                             <a href="/login"><img className="iconuser" src={User} alt="Icon User" /> </a>
                             <a id="users2" href="/login">Login</a>
                             <a id="users" href="/cadastro">Registre-se</a>
-                            <li><i className='bx bx-moon change-theme' id="themebtn"></i></li>
+                            <li><i className='bx bx-moon change-theme' id="themebtn" onClick={theme}></i></li>
                         </ul>
                     </nav>
                     <div className="nav__toggle" id="nav-toggle">

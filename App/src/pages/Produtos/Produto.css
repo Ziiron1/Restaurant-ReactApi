@@ -155,12 +155,12 @@ h3 {
 }
 
 .price {
-    color: #eee2e2;
+    color: var(--description-color);
     font-size: 22px;
 }
 
 .Descricao {
-    color: #e6e5e5;
+    color: var(--description-color);
     padding: 1px 5px;
 }
 
@@ -183,10 +183,18 @@ h3 {
     font-size: 16px;
 }
 
+h4 {
+    color: var(--text-color-light);
+}
+
 .grid-container {
     display: grid;
     column-gap: 50px;
     padding: 20px;
+}
+
+label {
+    color: var(--text-color-light);
 }
 
 .flex {
@@ -200,6 +208,7 @@ h3 {
 .central {
     display: flex;
     justify-content: center;
+    color: var(--title-color);
 }
 
 .radiobtn {
@@ -308,4 +317,58 @@ h3 {
 
 .submit:active {
     background-color: #06b;
+}
+
+/* @media (min-width: 1000px) {
+    .form {
+        margin: 20px 0px 10px 330px;
+    }
+} */
+
+/* @media (min-width: 900px) {
+    .form {
+        margin: 20px 0px 10px 330px;
+    }
+} */
+
+@media (max-width: 900px) {
+    .form {
+        margin: 20px 0px 10px 270px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form {
+        margin: 20px 0px 10px 250px;
+    }
+}
+
+@media (max-width: 750px) {
+    .form {
+        margin: 20px 0px 10px 270px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        margin: 20px 0px 10px 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form {
+        margin: 20px 0px 10px 150px;
+    }
+}
+
+@media (max-width: 550px) {
+    .form {
+        margin: 20px 0px 10px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form {
+        margin: 20px 0px 10px 100px;
+    }
 }

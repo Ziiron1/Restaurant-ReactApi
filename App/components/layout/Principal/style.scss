@@ -12,6 +12,7 @@
     --text-color-light: #eee2e2;
     --body-color: #606b6b;
     --container-color: #8e9595;
+    --white: #fff;
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -65,12 +66,19 @@ html {
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
-    --title-color: #F1F3F2;
-    --text-color: #C7D1CC;
-    --body-color: #1D2521;
-    --container-color: #27302C;
+.dark-theme {
+    --first-color-alt: #375c50;
+    --first-color: #35bb7d;
+    --title-color: #c6ecab;
+    --body-color: #0f1311;
+    --container-color: #4c4e4e;
+    --white: rgb(255, 254, 254);
+    --text-color-light: #c6ecab;
+    --description-color: rgb(219, 245, 219);
+    background-color: #282a2a;
+    color: #fff;
 }
+
 
 /*========== Button Dark/Light ==========*/
 .change-theme {
@@ -235,7 +243,7 @@ img {
 .button {
     display: inline-block;
     background-color: var(--first-color);
-    color: #FFF;
+    color: var(--white);
     padding: .75rem 1rem;
     border-radius: .5rem;
     transition: .3s;

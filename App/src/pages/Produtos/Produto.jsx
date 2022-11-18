@@ -148,7 +148,7 @@ function Produtos() {
 
                 <h2></h2>
 
-                <div class="card">
+                <div className="card">
                     <div className='card_img'>
                         <img src={data.link_imagem} alt="Image Api" />
                     </div>
@@ -204,13 +204,13 @@ function Produtos() {
             <div className='flex'>
 
                 <input type="radio" id="Pratos" name="restaurant" onClick={Pratos} />
-                <label for="Pratos">Pratos</label><br />
+                <label htmlFor="Pratos">Pratos</label><br />
 
                 <input type="radio" id="Bebidas" name="restaurant" onClick={Bebidas} />
-                <label for="Bebidas">Bebidas</label><br />
+                <label htmlFor="Bebidas">Bebidas</label><br />
 
                 <input type="radio" id="Sobremesa" name="restaurant" onClick={Sobremesa} />
-                <label for="Sobremesa"> Sobremesa </label><br />
+                <label htmlFor="Sobremesa"> Sobremesa </label><br />
 
 
             </div>
@@ -251,29 +251,29 @@ function Produtos() {
                 </tr> */}
             {arr}
             {/* </table> */}
-            <div class="form">
-                <div class="title">Bem-vindo</div>
-                <div class="subtitle">Vamos adicionar um novo prato!</div>
-                <div class="input-container ic1">
-                    <div class="cut"></div>
-                    <label for="firstname" class="placeholder1">Nome</label>
-                    <input id="firstname" class="input" type="text" placeholder=" " value={nome} onChange={(e) => setNome(e.target.value)} />
+            <div className="form">
+                <div className="title">Bem-vindo</div>
+                <div className="subtitle">Vamos adicionar um novo prato!</div>
+                <div className="input-container ic1">
+                    <div className="cut"></div>
+                    <label htmlFor="firstname" className="placeholder1">Nome</label>
+                    <input id="firstname" className="input" type="text" placeholder=" " value={nome} onChange={(e) => setNome(e.target.value)} />
 
-                    <div class="cut"></div>
-                    <label for="Tipo" class="placeholder2">Tipo</label>
-                    <input id="Tipo" class="input" type="text" placeholder=" " value={tipo} onChange={(e) => setTipo(e.target.value)} />
+                    <div className="cut"></div>
+                    <label htmlFor="Tipo" className="placeholder2">Tipo</label>
+                    <input id="Tipo" className="input" type="text" placeholder=" " value={tipo} onChange={(e) => setTipo(e.target.value)} />
 
-                    <div class="cut"></div>
-                    <label for="Preco" class="placeholder3">Preço</label>
-                    <input id="Preco" class="input" type="text" placeholder=" " value={preco} onChange={(e) => SetPreco(e.target.value)} />
+                    <div className="cut"></div>
+                    <label htmlFor="Preco" className="placeholder3">Preço</label>
+                    <input id="Preco" className="input" type="text" placeholder=" " value={preco} onChange={(e) => SetPreco(e.target.value)} />
 
-                    <div class="cut"></div>
-                    <label for="Descricao" class="placeholder4">Descrição</label>
-                    <input id="Descricao" class="input" type="text" placeholder=" " value={descricao} onChange={(e) => setDescricao(e.target.value)} />
+                    <div className="cut"></div>
+                    <label htmlFor="Descricao" className="placeholder4">Descrição</label>
+                    <input id="Descricao" className="input" type="text" placeholder=" " value={descricao} onChange={(e) => setDescricao(e.target.value)} />
 
-                    <div class="cut"></div>
-                    <label for="LinkImage" class="placeholder5">Link da Imagem</label>
-                    <input id="LinkImage" class="input" type="text" placeholder=" " value={link_imagem} onChange={(e) => setLink_imagem(e.target.value)} />
+                    <div className="cut"></div>
+                    <label htmlFor="LinkImage" className="placeholder5">Link da Imagem</label>
+                    <input id="LinkImage" className="input" type="text" placeholder=" " value={link_imagem} onChange={(e) => setLink_imagem(e.target.value)} />
 
 
                 </div>
@@ -281,8 +281,8 @@ function Produtos() {
             <div className='centralbtn'>
                 {/* Post button Food */}
                 <button onClick={postData} className="PostBtn">
-                    <div class="svg-wrapper-1">
-                        <div class="svg-wrapper">
+                    <div className="svg-wrapper-1">
+                        <div className="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
@@ -294,8 +294,8 @@ function Produtos() {
 
                 {/* Post button Drink */}
                 <button onClick={postData2} className="PostBtn">
-                    <div class="svg-wrapper-1">
-                        <div class="svg-wrapper">
+                    <div className="svg-wrapper-1">
+                        <div className="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
@@ -307,8 +307,8 @@ function Produtos() {
 
                 {/* Post button Dessert */}
                 <button onClick={postData3} className="PostBtn">
-                    <div class="svg-wrapper-1">
-                        <div class="svg-wrapper">
+                    <div className="svg-wrapper-1">
+                        <div className="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
