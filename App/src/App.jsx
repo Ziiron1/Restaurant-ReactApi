@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom' /* Routes */
+import { BrowserRouter as Router, Routes, Route, Link, Navigate, useParams } from 'react-router-dom' /* Routes */
 import './App.css' /* Style */
 
 /* Global */
@@ -31,31 +31,22 @@ function App() {
       {/* <Load /> */}
 
 
-
       {/* Rotas */}
-
       <Routes>
-        <Route exact='true' path="/" element={<Home />} > </Route>
-      </Routes>
+        <Route exact='true' path="/" element={<Home />} />
 
-      <Routes>
-        <Route path="/login" element={<Login />} > </Route>
-      </Routes>
+        <Route path="/login" element={<Login />} />
 
-      <Routes>
-        <Route path="/cadastro" element={<Cadastro />} > </Route>
-      </Routes>
+        <Route path="/cadastro" element={<Cadastro />} />
 
-      <Routes>
-        <Route path="/produtos" element={<Produtos />} > </Route>
-      </Routes>
+        <Route path="/produtos" element={<Produtos />} />
 
-      <Routes>
-        {/* <Route path="*" element={<NotFound />} > </Route> */}
+        <Route path='/404' element={<NotFound />} > {Valores}</Route>
+
+        <Route path="*" element={<Navigate to="/404" />} > {Valores} </Route>
       </Routes>
 
       <Cookies />
-
 
       <Footer />
     </Router>
