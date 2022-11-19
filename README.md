@@ -30,5 +30,5 @@ $ npm run dev
 $ <http://localhost:5173>
 ```
 
-Dentro do Servidor local já é possível Criar, Alterar, Deletar e Consumir a Api já previamente Feita.## Criando um novo projeto
+Dentro do Servidor local já é possível Criar, Alterar, Deletar e Consumir a Api já previamente Feita.
 
