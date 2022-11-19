@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link, Navigate, useParams } from 'react-router-dom' /* Routes */
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom' /* Routes */
 import './App.css' /* Style */
 
 /* Global */
@@ -25,8 +25,8 @@ import Cookies from '../components/Cookies/Cookie'
 
 function App() {
 
-  const [response, setResponse] = React.useState(null);
-  const [loading, setLoading] = React.useState(null)
+  const [response, setResponse] = useState(null);
+  const [loading, setLoading] = useState(null)
 
   useEffect(() => {
     setLoading(true);
@@ -48,7 +48,6 @@ function App() {
 
     <Router>
       <Navbar />
-
 
 
       {/* Rotas */}

@@ -1,3 +1,4 @@
+import React from 'react';
 import Axios from 'axios'
 import { useEffect, useState } from 'react';
 import './Produto.css'
@@ -13,7 +14,7 @@ function Produtos() {
     const [link_imagem, setLink_imagem] = useState('')
 
     // Get Api
-    useEffect(() => {
+    React.useEffect(() => {
         Axios.get('https://crudserver2.herokuapp.com/pratos')
             .then(res => {
                 console.log("Getting from ", res.data)
@@ -232,12 +233,6 @@ function Produtos() {
                 <label>Link da Imagem</label>
                 <input type="text" value={link_imagem} onChange={(e) => setLink_imagem(e.target.value)} />
                 <hr /> */}
-
-
-
-
-
-
 
 
             {/* Nome das Tabelas dos dados do Site */}
