@@ -12,7 +12,6 @@ import plate1 from './img/plate1.png'
 import plate2 from './img/plate2.png'
 import plate3 from './img/plate3.png'
 
-
 import Scroll from './Scroll'
 
 

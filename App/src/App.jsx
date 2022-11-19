@@ -1,3 +1,6 @@
+import React from 'react'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useParams } from 'react-router-dom' /* Routes */
 import './App.css' /* Style */
 
@@ -20,15 +23,32 @@ import Load from '../components/layout/loading/Loading'
 import Cookies from '../components/Cookies/Cookie'
 
 
-
 function App() {
+
+  const [response, setResponse] = React.useState(null);
+  const [loading, setLoading] = React.useState(null)
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get(
+        `https://crudserver2.herokuapp.com/pratos/`,
+      )
+      .then(({ data }) => {
+        setLoading(false)
+        setResponse(data);
+      });
+  }, []);
+
+  if (loading) return <Load />
+
 
 
   return <div className='App'>
 
     <Router>
       <Navbar />
-      {/* <Load /> */}
+
 
 
       {/* Rotas */}
@@ -41,9 +61,9 @@ function App() {
 
         <Route path="/produtos" element={<Produtos />} />
 
-        <Route path='/404' element={<NotFound />} > {Valores}</Route>
+        <Route path='/404' element={<NotFound />} />
 
-        <Route path="*" element={<Navigate to="/404" />} > {Valores} </Route>
+        <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
 
       <Cookies />
