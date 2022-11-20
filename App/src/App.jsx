@@ -4,13 +4,14 @@ import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom' /* Routes */
 import './App.css' /* Style */
 
+
 /* Global */
 import Navbar from '../components/layout/Navbar/Navbar'
 import Footer from '../components/layout/Footer/Footer'
 
 /* Pages */
-import Login from './pages/Cliente/Login'
-import Cadastro from './pages/Cliente/cadastro'
+import Login from './pages/Login/Login'
+import Cadastro from './pages/Cadastro/Cadastro'
 import Home from './pages/home'
 import Produtos from './pages/Produtos/Produto'
 import NotFound from './pages/NotFound/notFound'
@@ -48,7 +49,6 @@ function App() {
 
     <Router>
       <Navbar />
-
 
       {/* Rotas */}
       <Routes>
