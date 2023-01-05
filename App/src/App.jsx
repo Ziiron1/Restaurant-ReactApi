@@ -10,8 +10,6 @@ import Navbar from '../components/layout/Navbar/Navbar'
 import Footer from '../components/layout/Footer/Footer'
 
 /* Pages */
-import Login from './pages/Login/Login'
-import Cadastro from './pages/Cadastro/Cadastro'
 import Home from './pages/home'
 import Produtos from './pages/Produtos/Produto'
 import NotFound from './pages/NotFound/notFound'
@@ -33,7 +31,7 @@ function App() {
     setLoading(true);
     axios
       .get(
-        `https://crudserver2.herokuapp.com/pratos/`,
+        `https://crudserver2.onrender.com/pratos/`,
       )
       .then(({ data }) => {
         setLoading(false)
@@ -53,10 +51,6 @@ function App() {
       {/* Rotas */}
       <Routes>
         <Route exact='true' path="/" element={<Home />} />
-
-        <Route path="/login" element={<Login />} />
-
-        <Route path="/cadastro" element={<Cadastro />} />
 
         <Route path="/produtos" element={<Produtos />} />
 
